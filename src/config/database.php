@@ -1,4 +1,5 @@
 <?php
+
 // Define database configuration
 $host = "localhost";
 $port = "5432";
@@ -16,13 +17,13 @@ $data_connection = "
 ";
 
 // Establish the connection
-$connection = pg_connect($data_connection);
+$conn = pg_connect($data_connection);
 
 // Error handling
-if (!$connection) {
+if (!$conn) {
     echo "Connection error.";
 } else {
-    echo "Connection success !!!";
+    echo "Connection success.";
 }
 
 ?>
