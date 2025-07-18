@@ -32,6 +32,7 @@ if ($ans) {
         $ans = pg_query($conn, $sql);
         if ($ans) {
             echo "<script>alert('User has been created!')</script>";
+            header('Refresh: 0; URL=http://localhost/alpha-systems-engineering/src/frontend/login.html');
         } else {
             echo "Error.";
         }
@@ -39,5 +40,4 @@ if ($ans) {
 } else {
     echo "Query error.";
 }
-
 ?>
