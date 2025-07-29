@@ -20,7 +20,8 @@ $result = pg_query($conn, $sql);
 if($result) {
     $count = pg_fetch_assoc($result);
     if($count['count'] > 0) {
-        echo "Email already exists";
+        echo "<script>alert('Email already exists.');</script>";
+        header("Refresh: 0; url=http://localhost/alpha-systems-engineering/src/frontend/signup.html");
     } else {
         // Insert new user
         $sql = "INSERT INTO users (firstname, lastname, email, password) 
@@ -29,7 +30,7 @@ if($result) {
         if(pg_query($conn, $sql)) {
 
             echo "<script>alert('User created successfully. Go to Sign In');</script>";
-            header("Refresh: 0; url=http://localhost/pet-store/src/signin.html");
+            header("Refresh: 0; url=http://localhost/alpha-systems-engineering/src/frontend/login.html");
         } else {
             echo "Error creating user: " . pg_last_error($conn);
         }
