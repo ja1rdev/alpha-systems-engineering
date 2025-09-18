@@ -1,0 +1,11 @@
+Laboratorio 3: Temperature sensor 
+
+1. ESP32 S3 WROOM
+2. Protoboard
+3. LEDs (Red, Yellow, Green)
+4. Resistances (220 ohms)
+5. DC Engine
+6. LCD 16x2 (I2C)
+7. Temperature sensor (TMP36)
+8. Bridge (L298N)
+9. Diodo
