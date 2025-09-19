@@ -1,0 +1,61 @@
+Pruebas de integración
+La creación de aplicaciones complejas e interconectadas requiere una validación rigurosa de sus componentes y sus interacciones. Las pruebas son esenciales para garantizar el óptimo funcionamiento y la fiabilidad.
+
+Las pruebas de integración permiten a los desarrolladores ofrecer un software robusto que satisfaga las expectativas del usuario.
+
+¿Qué son las pruebas de integración?
+Evaluar la interacción entre los componentes de un sistema para identificar posibles errores.
+
+El sistema se divide en componentes conocidos como módulos.
+Cada módulo se responsabiliza de una funcionalidad específica.
+El verdadero desafío surge cuando combinamos estos componentes para desarrollar todo el sistema de software.
+Pruebas de integración: En esta etapa, se comienza a examinar cuidadosamente las conexiones entre cada módulo para descubrir cualquier problema potencial que surja de la interacción entre unidades.
+
+Cuando las pruebas han finalizado, se realizan pruebas de punta a punta para evaluar el funcionamiento de principio a fin.
+
+Los módulos de software son combinados manualmente y se evalúan sus relaciones en las pruebas de componentes.
+
+Las pruebas manuales pueden ser costosas y vulnerables a errores humanos.
+
+Puede resultar desafiante cubrir adecuadamente todas las posibles combinaciones de módulos.
+por lo tanto se suele emplear pruebas de integración automatizadas.
+
+Procedimientos de pruebas de integración
+1. Crear un plan de pruebas: Objetivos, alcance y enfoque.
+2. Comenzar con modulos esenciales: Dar prioridad a los módulos más vitales.
+3. Usar herramientas diversas: Seleccione las herramienta que cumplen con los requisitos de la prueba.
+4. Realizar las pruebas en varios entornos: garantizar que las pruebas sean solidas y confiables.
+5. Evaluar los resultados minuciosamente: Identificar y corregir los errores.
+
+Alcance: Pruebas unitarias se centran en grupo de código muy pequeños. - Integración interacción de módulos.
+Objetivo: Comprobar que cada elemento funcione de forma independiente. - Comprobar que todas la piezas conectadas entre sí funcionen correctamente.
+Velocidad: Pruebas unitarias son rápidas y eficientes. - Integración puede ser lenta y costosa.
+Cobertura: Ofrece cobertura extensiva. - Garantiza que los módulos funcionen correctamente juntos.
+
+Tipos de pruebas:
+Incrementales: Enfoque Top-Down- Bottom-Up. De arriba hacia abajo y de abajo hacia arriba.
+No incrementales: Enfoque Big Bang. Todo juntos.
+
+Pruebas incrementales: Nos permiten probar modulos de software en pequeños incrementos.
+
+Ventajas de las pruebas incrementales:
+Al realizar las pruebas de integración, vamos a realizar un análisis del funcionalidad del sistema.
+1. Validar el fujo de datos: Evaluar que los datos se envían correctamente.
+2. Identificar dependencias externas: Evaluar que las dependencias externas funcionen correctamente.
+3. Escenarios de pruebas personalizados: Diseñar diferentes casos de pruebas para evaluar el sistema.
+4. Validar la escalabilidad del sistema: Como el sistema responde a la cargas de trabajo.
+
+Herramientas para pruebas de integración:
+1. JUnit5: Permite realizar pruebas unitarias y de integración.
+2. TestNG: Configuración de pruebas más flexibles.
+3. Prueba de Spring Boot: Pruebas de integración con Spring Boot.
+4. Mockito: Simulación de dependencias externas.
+5. Testcontainers: Pruebas de integración con contenedores.
+
+Imaginemos un sistema de gestión escolar que tiene varios módulos.
+
+1. Modulo de registro de estudiante
+2. Modulo de notas
+3. módulo de reportes
+
+Nota: Buscar ejemplo de un sistema, generar modulos y combinarlos para realizar pruebas de integración.
