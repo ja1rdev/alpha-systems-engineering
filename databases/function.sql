@@ -116,3 +116,95 @@ END;
 $$ LANGUAGE plpgsql;
 
 SELECT clinica.getMonthName(9);
+
+
+-- For loop
+CREATE OR REPLACE FUNCTION clinica.loop(numero INT)
+RETURNS INT AS $$
+DECLARE
+    i INT := 0;
+BEGIN
+    FOR i IN 1..numero loop
+        RAISE NOTICE 'Contador % esto es un texto adicional', i;
+    END loop;
+    RETURN i;
+END;
+
+$$ LANGUAGE plpgsql;
+
+-- For con incremento de 2
+CREATE OR REPLACE FUNCTION clinica.loop(numero INT)
+RETURNS INT AS $$
+DECLARE
+    i INT := 4;
+BEGIN
+    FOR i IN i..numero by 2 loop
+        RAISE NOTICE 'Contador % esto es un texto adicional', i;
+    END loop;
+    RETURN i;
+END;
+
+$$ LANGUAGE plpgsql;
+
+-- For invertido
+CREATE OR REPLACE FUNCTION clinica.loop(numero INT)
+RETURNS INT AS $$
+DECLARE
+    i INT;
+BEGIN
+    FOR i IN REVERSE numero..1 loop
+        RAISE NOTICE 'Contador % esto es un texto adicional', i;
+    END loop;
+    RETURN 0;
+END;
+
+$$ LANGUAGE plpgsql;
+
+
+-- While
+CREATE OR REPLACE FUNCTION clinica.while(numero INT)
+RETURNS INT AS $$
+DECLARE
+    i INT := 0;
+BEGIN
+    WHILE i < numero loop
+        RAISE NOTICE 'Contador % esto es un texto adicional', i;
+        i := i + 1;
+    END loop;
+    RETURN i;
+END;
+
+$$ LANGUAGE plpgsql;
+
+-- Función que reciba un número y retorne los números pares desde 0 hasta el número ingresado (for)
+CREATE OR REPLACE FUNCTION clinica.pares(numero INT)
+RETURNS INT AS $$
+DECLARE
+    i INT := 0;
+BEGIN
+    FOR i IN 0..numero loop
+        IF i % 2 = 0 THEN
+            RAISE NOTICE 'El numero % es par', i;
+        END IF;
+    END loop;
+    RETURN 0;
+END;
+
+$$ LANGUAGE plpgsql;
+
+-- Función que reciba un número y retorne los números impares desde 0 hasta el número ingresado (while)
+CREATE OR REPLACE FUNCTION clinica.impares(numero INT)
+RETURNS INT AS $$
+DECLARE
+    i INT := 0;
+BEGIN
+    WHILE i < numero loop
+        IF i % 2 <> 0 THEN
+            RAISE NOTICE 'El numero % es impar', i;
+        END IF;
+        i := i + 1;
+    END loop;
+    RETURN i;
+END;
+
+$$ LANGUAGE plpgsql;
