@@ -9,3 +9,4 @@ Laboratorio 3: Temperature sensor
 7. Temperature sensor (TMP36)
 8. Bridge (L298N)
 9. Diodo
+10. Sensor DHT11 Temperature humidity
