@@ -1,0 +1,52 @@
+La pruebas de sistemas
+
+Las pruebas de sistemas es un tipo de prueba de software que realiza comprobaciones del sistema en conjunto.
+Consiste en integrar todos los modulos y componentes individuales del software desarrollado, para comprobar
+si el sistema funciona confuntamente como se espera.
+
+Las pruebas del sistema pasos esenacial para verificar la calidad del software.
+
+Nota:
+
+1. Pruebas unitarias
+2. Pruebas de integracion
+3. Pruebas de sistema
+
+Pruebas de sistemas: 
+
+En que ocasiones se realizan las pruebas de sistemas?
+
+1. Durante el desarrollo de nuevas versiones del software.
+2. Durante el lanzamiento de la aplicación, cuando tiene lugar las pruebas alpha y beta.
+3. Una vez finalizadas las pruebas unitarias y de integración.
+4. Cuando los requisitos de la construcción de sistema este completos.
+
+Cuando no se debe hacer pruebas de sistemas?
+
+Si no sea realizado unas pruebas preliminares (pruebas unitarias y de integración).
+
+Quien participa en las pruebas de sistemas?
+
+Las pruebas de sistemas se realizan los probadores y los equipos de control de calidad.
+
+Las pruebas de sistema se enfocan en 4 partes:
+
+1. Funcionalidad
+2. Integración
+3. Resultados esperados
+4. Fallos y errores
+
+Ciclo de vida de las pruebas de sistemas:
+
+1. Planificación
+2. Ejecución
+3. Análisis
+4. Reporte
+
+Nota: En general, las pruebas tienen un ciclo de vida similar.
+
+Pruebas de sistemas vs Pruebas de integración
+
+Las pruebas de integración se enfocan en la integración de los componentes del software.
+
+Las pruebas de sistemas se enfocan en la integración de todos los componentes del software.
